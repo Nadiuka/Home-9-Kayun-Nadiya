@@ -5,11 +5,11 @@
 .introducing-members {
     padding-bottom: 100px;
     border-bottom: 1px solid #dfdfdf;
+}
 
-    .angle {
-        display: flex;
-        justify-content: flex-end;
-    }
+.angle {
+    display: flex;
+    justify-content: flex-end;
 
     i {
         width: 35px;
@@ -27,27 +27,36 @@ h2 {
     font-weight: 400;
     line-height: 30px;
     margin: 0;
-}
 
-.info-about {
-    font-family: $third-font;
-    color: #df001f;
-    font-size: 32px;
-    font-weight: 400;
-    display: inherit;
+    span {
+        font-family: $third-font;
+        color: #df001f;
+        font-size: 32px;
+        font-weight: 400;
+        display: inherit;
+    }
 }
 
 .members {
-    li {
-        float: left;
-        width: 33.3%;
-        padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .members-item {
+        position: relative;
+
+        &:hover .active-icon {
+            display: block;
+        }
     }
 }
 
 .name-members {
     background-color: #df001f;
     padding: 17px 24px 24px 27px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 370px;
 
     h3 {
         font-size: 22px;
@@ -63,4 +72,40 @@ h2 {
         color: $second-color;
         font-weight: 400;
     }
+
+    .active-icon {
+        display: none;
+        margin-top: 25px;
+
+        li {
+            float: left;
+        }
+
+        a {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-right: 10px;
+        }
+
+        i {
+            padding-right: 10px;
+        }
+    }
 }
+
+.concert-and-videos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-foto-concert {
+    margin-top: 40px;
+}
+
+.table {
+    float: left;
+    clear: both;
+}
+
