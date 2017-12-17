@@ -230,15 +230,8 @@ h2 {
     display: flex;
     justify-content: space-between;
 
-    .album-foto {
-        img {
-            max-width: 120px;
-            height: auto;
-        }
-    }
-
     .songs {
-        margin-top: 80px;
+        margin-top: 40px;
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
@@ -246,6 +239,7 @@ h2 {
 
         li {
             transition: 0.5s;
+            border-bottom: 1px solid #999999;
 
             &:hover {
                 transition: 0.5s;
@@ -270,7 +264,57 @@ h2 {
         li {
             float: left;
             padding: 10px;
+
+            &:hover {
+                opacity: 0.7;
+            }
         }
+    }
+}
+
+.app {
+    background: url("../img/app-foto.png") no-repeat scroll center/cover;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    margin-top: 90px;
+
+    p {
+        color: $second-color;
+        margin: 0;
+    }
+
+    .download-app {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 48px;
+        font-family: $second-font;
+    }
+
+    .listening {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
+.icon-app {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    li {
+        padding: 5px;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.5;
+            transition: 0.5s;
+        }
+    }
+
+    img {
+        max-width: 162px;
+        max-height: 50px;
     }
 }
 
