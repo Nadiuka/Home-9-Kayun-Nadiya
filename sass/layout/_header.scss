@@ -70,6 +70,15 @@
 .main-foto {
     position: relative;
     border-bottom: 3px solid $third-color;
+
+    .flexslider {
+        margin: 0;
+        border: none;
+    }
+
+    .flex-direction-nav {
+        display: none;
+    }
 }
 
 .header {
