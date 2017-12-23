@@ -21,3 +21,13 @@ jQuery(window).load(function() {
     controlNav: false
   })
 })
+
+jQuery(document).ready(function() {
+  jQuery('.open-popup').on('click', function() {
+    jQuery('.popup').addClass('show')
+  })
+
+  jQuery('.close-popup').on('click', function () {
+    jQuery('.popup').removeClass('show')
+  })
+})
