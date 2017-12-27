@@ -25,6 +25,7 @@ jQuery(window).load(function() {
 jQuery(document).ready(function() {
   jQuery('.open-popup').on('click', function() {
     jQuery('.popup').addClass('show')
+    return false
   })
 
   jQuery('.close-popup').on('click', function () {

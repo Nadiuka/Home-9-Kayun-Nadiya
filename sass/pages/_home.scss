@@ -174,41 +174,6 @@ h2 {
     padding: 100px 0;
 }
 
-.popup {
-    display: none;
-}
-
-.popup.show {
-    display: block;
-    background-color: #333333;
-    padding: 20px 20px 40px 100px;
-
-    p {
-        font-size: 18px;
-        font-weight: 400;
-        color: $second-color;
-        margin: 0 0 30px 0;
-    }
-
-    a {
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 30px;
-        text-transform: uppercase;
-        color: $third-color;
-        transition: 0.7s;
-        border-radius: 25px;
-        background-color: #ffffff;
-        padding: 20px 40px;
-
-        &:hover {
-            transition: 0.7s;
-            color: $second-color;
-            background-color: #df001f;
-        }
-    }
-}
-
 .history {
     background-color: #333333;
     display: flex;
@@ -354,5 +319,49 @@ h2 {
     img {
         max-width: 162px;
         max-height: 50px;
+    }
+}
+
+.wrapper-popup {
+    position: fixed;
+    background-color: #333333;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: none;
+}
+
+.popup.show {
+    display: block;
+    position: absolute;
+    background-color: #333333;
+    padding: 20px 20px 40px 100px;
+    max-width: 500px;
+    //transform: translateY(-50%);
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: $second-color;
+        margin: 0 0 30px 0;
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+        transition: 0.7s;
+        border: 2px solid #333333;
+        background-color: #ffffff;
+        padding: 20px 40px;
+
+        &:hover {
+            transition: 0.7s;
+            opacity: 0.7;
+        }
     }
 }
