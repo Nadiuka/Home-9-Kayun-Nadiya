@@ -24,11 +24,12 @@ jQuery(window).load(function() {
 
 jQuery(document).ready(function() {
   jQuery('.open-popup').on('click', function() {
-    jQuery('.popup').addClass('show')
-    return false
+    jQuery('.wrapper-popup').addClass('show')
+    event.preventDefault()
   })
 
   jQuery('.close-popup').on('click', function () {
-    jQuery('.popup').removeClass('show')
+    jQuery('.wrapper-popup').removeClass('show')
+    event.preventDefault()
   })
 })
